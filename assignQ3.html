@@ -1,0 +1,21 @@
+<html>
+    <head> 
+        <h1>
+            js page to display date in formated manner
+        </h1>
+    </head>
+    <body>
+        <script>
+           var today=new Date();
+           var dd=today.getDate();
+           var mm=today.getMonth();
+           var yyyy=today.getFullYear();
+
+           today=mm+'-'+dd+'-'+yyyy
+        //    document.getElementById('sample').innerHTML=today;
+        document.write(today)
+            today=','+mm+'/'+dd+'/'+yyyy
+            document.write(today)
+        </script>
+    </body>
+</html>

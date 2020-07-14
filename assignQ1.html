@@ -1,0 +1,24 @@
+<html>
+    <head> 
+        <h1>
+            js page to display current day and time in formatted manner
+        </h1>
+    </head>
+    <body>
+        <script>
+           var today=new Date();
+           var day=today.getDay();
+            var daylist=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.write("Today is:"+daylist[day]+"<br>");
+            var hrs=today.getHours();
+            var min=today.getMinutes();
+            var sec=today.getSeconds();
+            var prepand=(hrs>=12)?"PM":"AM";
+            document.write("Curent Time is:"+ hrs + prepand +":"+min+":"+sec);
+            // var time;
+            // time=hrs+':'+min+':'+sec
+            // document.write();
+           
+        </script>
+    </body>
+</html>
